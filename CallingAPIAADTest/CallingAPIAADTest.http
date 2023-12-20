@@ -1,0 +1,7 @@
+@CallingAPIAADTest_HostAddress = https://callingapiaadtest.azurewebsites.net/
+#@CallingAPIAADTest_HostAddress = https://localhost:7246
+
+GET {{CallingAPIAADTest_HostAddress}}/api1/call-chain
+Accept: application/json
+
+###
