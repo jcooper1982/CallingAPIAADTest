@@ -19,7 +19,8 @@
         "ASPNETCORE_ENVIRONMENT": "Development",
         "DownstreamAPIURL": "https://localhost:7095/api2/downstream",
         "AZURE_TENANT_ID": "d962f75c-cc29-491f-9b97-3d5f112e0b4e",
-        "DownstreamAPIAudience": "api://CalledAPIAADTest/.default"
+        "DownstreamAPIAudience": "api://CalledAPIAADTest/.default",
+        "AZURE_CLIENT_ID": "b9633084-b60b-4f89-92c7-23efb1b51a0a"
       }
     },
       "IIS Express": {
