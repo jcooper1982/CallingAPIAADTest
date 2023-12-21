@@ -1,3 +1,5 @@
+This demo is largely based on the blog post https://jaliyaudagedara.blogspot.com/2023/10/calling-aspnet-core-web-api-secured.html.  It's purpose is to illustrate having an API use AAD based Managed Identity to authenticate to a downstream API.
+
 This is the Upstream API, corresponding to the downstream API from https://github.com/jcooper1982/CalledAPIAADTest
 
 This API, which can be called with no authentication, fetches an Access Token based on the managed identity specified via the AZURE_CLIENT_ID environment variable and with an audience based on the DownstreamAPIAudience environment variable, and this access token is passed to the downstream API which requires authentication.
