@@ -3,5 +3,6 @@
 
 GET {{CallingAPIAADTest_HostAddress}}/api1/call-chain
 Accept: application/json
+traceparent: {{$guid}}
 
 ###

@@ -1,6 +1,8 @@
 ﻿using Azure.Core;
 using Azure.Identity;
 using CallingAPIAADTest.Controllers;
+using OpenTelemetry.Trace;
+using System.Diagnostics;
 using System.Text.Json;
 
 namespace CallingAPIAADTest
@@ -27,6 +29,21 @@ namespace CallingAPIAADTest
             
             var httpRequestMessage = new HttpRequestMessage(HttpMethod.Get, _options.APIEndpointURL);
             var httpResponseMessage = await httpClient.SendAsync(httpRequestMessage);
+            _logger.LogInformation("Calling downstream API");
+
+            var activity = Activity.Current;
+
+            try
+            {
+                throw new Exception("Test exception1");
+            }
+            // If an exception is thrown, catch it and set the activity status to "Ok".
+            catch (Exception ex)
+            {
+                activity?.SetStatus(ActivityStatusCode.Ok);
+                activity?.RecordException(ex);
+            }
+
             var response = await ProcessResponse(httpResponseMessage, accessToken);
             return response;
         }

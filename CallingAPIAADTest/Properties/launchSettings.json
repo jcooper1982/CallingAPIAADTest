@@ -20,7 +20,8 @@
         "DownstreamAPIURL": "https://localhost:7095/api2/downstream",
         "AZURE_TENANT_ID": "d962f75c-cc29-491f-9b97-3d5f112e0b4e",
         "DownstreamAPIAudience": "api://CalledAPIAADTest/.default",
-        "AZURE_CLIENT_ID": "b9633084-b60b-4f89-92c7-23efb1b51a0a"
+        "AZURE_CLIENT_ID": "b9633084-b60b-4f89-92c7-23efb1b51a0a",
+        "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=84abe48f-f929-4d34-986f-ce6761df4cc1;IngestionEndpoint=https://australiaeast-1.in.applicationinsights.azure.com/;LiveEndpoint=https://australiaeast.livediagnostics.monitor.azure.com/;ApplicationId=cc7680f8-318a-4777-8678-ee6e6a80cbce"
       }
     },
       "IIS Express": {

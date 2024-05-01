@@ -1,4 +1,7 @@
 
+using Azure.Identity;
+using Azure.Monitor.OpenTelemetry.AspNetCore;
+
 namespace CallingAPIAADTest
 {
     public class Program
@@ -6,6 +9,11 @@ namespace CallingAPIAADTest
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddOpenTelemetry().UseAzureMonitor(options =>
+            {
+                //options.Credential = new DefaultAzureCredential();
+            });
 
             // Add services to the container.
 

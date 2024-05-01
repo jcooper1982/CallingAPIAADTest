@@ -26,6 +26,7 @@ namespace CallingAPIAADTest.Controllers
         {
             try
             {
+                _logger.LogInformation("About to call downstream API");
                 CallingAPIResponse response = await _client.CallDownstreamAPI();
                 return Ok(response);
             }
