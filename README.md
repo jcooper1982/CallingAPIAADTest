@@ -26,3 +26,7 @@ DownstreamAPIAudience = api://CalledAPIAADTest/.default
 Scenario 3 - Failed scenario, downstream API rejects requests as JWT contains incorrect audience (app registration) in spite of having a valid role
 AZURE_CLIENT_ID = b9633084-b60b-4f89-92c7-23efb1b51a0a
 DownstreamAPIAudience = api://CallingAPIAADTest/.default
+
+This API as well as the downstream API now use the Azure Monitor OpenTelemetry Distro to push observability to Application Insights.  All requests, dependencies and logs are correlated auto-magically and you get access to a lot of rich App Insights features such as performance measurements, application maps etc... without having to use the App Insights SDK.
+
+![alt text]([http://url/to/img.png](https://github.com/jcooper1982/CallingAPIAADTest/blob/master/Images/Application%20Map.png))
