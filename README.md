@@ -29,4 +29,20 @@ DownstreamAPIAudience = api://CallingAPIAADTest/.default
 
 This API as well as the downstream API now use the Azure Monitor OpenTelemetry Distro to push observability to Application Insights.  All requests, dependencies and logs are correlated auto-magically and you get access to a lot of rich App Insights features such as performance measurements, application maps etc... without having to use the App Insights SDK.
 
-![alt text]([http://url/to/img.png](https://github.com/jcooper1982/CallingAPIAADTest/blob/master/Images/Application%20Map.png))
+Request Search
+![alt text](https://github.com/jcooper1982/CallingAPIAADTest/blob/master/Images/Request%20Search.png)
+
+End to End Transaction
+![alt text](https://github.com/jcooper1982/CallingAPIAADTest/blob/master/Images/CallingAPI%20End%20to%20End%20Transaction.png)
+
+Correlated ILogger Logs
+![alt text](https://github.com/jcooper1982/CallingAPIAADTest/blob/master/Images/Correlated%20ILogger%20Log%20Message.png)
+
+Correlated Exceptions
+![alt text](https://github.com/jcooper1982/CallingAPIAADTest/blob/master/Images/Correlated%20Exception.png)
+
+Performance view
+![alt text](https://github.com/jcooper1982/CallingAPIAADTest/blob/master/Images/Performance.png)
+
+Application Map
+![alt text](https://github.com/jcooper1982/CallingAPIAADTest/blob/master/Images/Application%20Map.png)
