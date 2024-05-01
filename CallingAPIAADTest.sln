@@ -10,6 +10,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{A62C7F92-BCD0-420C-A4C4-53214E737945}"
+	ProjectSection(SolutionItems) = preProject
+		Images\Application Map.png = Images\Application Map.png
+		Images\CallingAPI End to End Transaction.png = Images\CallingAPI End to End Transaction.png
+		Images\Correlated Exception.png = Images\Correlated Exception.png
+		Images\Correlated ILogger Log Message.png = Images\Correlated ILogger Log Message.png
+		Images\Performance.png = Images\Performance.png
+		Images\Request Search.png = Images\Request Search.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +33,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A62C7F92-BCD0-420C-A4C4-53214E737945} = {860316DF-E45B-4B49-A23D-CBA993EB4E08}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7CB05837-B6DD-4C31-90FB-AD19829A12C3}

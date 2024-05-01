@@ -12,7 +12,7 @@ namespace CallingAPIAADTest
 
             builder.Services.AddOpenTelemetry().UseAzureMonitor(options =>
             {
-                //options.Credential = new DefaultAzureCredential();
+                options.Credential = new ManagedIdentityCredential("b9633084-b60b-4f89-92c7-23efb1b51a0a");
             });
 
             // Add services to the container.
